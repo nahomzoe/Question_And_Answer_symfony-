@@ -1,0 +1,60 @@
+@import url("https://fonts.googleapis.com/css2?family=Macondo&display=swap");
+
+body {
+  background-image: url("./ask.mp4");
+}
+.home {
+  height: 73vh;
+  position: relative;
+}
+video {
+  object-fit: cover;
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  position: absolute;
+  z-index: 1;
+}
+.text {
+  width: 700px;
+  margin: 15rem;
+  margin-left: 60rem;
+  position: relative;
+  top: 220px;
+  color: rgb(36, 109, 33);
+  z-index: 3;
+  font-size: 50px;
+  font-family: "Macondo", cursive;
+}
+
+.btn {
+  position: relative;
+  margin-left: 50%;
+  margin-top: 18%;
+  top: -20;
+  padding-left: 7%;
+  padding-right: 7%;
+  z-index: 40;
+}
+.container {
+  display: inline-flex;
+
+  margin: 3rem;
+}
+.dropdown {
+  margin-left: 40%;
+  margin: 5rem;
+}
+
+.funny-video {
+  width: 40%;
+  height: 40%;
+  margin-left: 50%;
+}
+button a {
+  text-decoration: none;
+}
+
+nav {
+  z-index: 1000;
+}

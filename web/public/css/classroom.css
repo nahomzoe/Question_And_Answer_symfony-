@@ -5,7 +5,7 @@
 
     --shirt-color1:tomato;
     --shirt-color2:rgb(21, 63, 121);
-    --shirt-color3:rgb(46, 113, 7);
+    --shirt-color3:rgb(79, 154, 35);
     --skin-color1:#ECA03D;
     --skin-color2:#dbccba;
     --skin-color3:rgb(169, 138, 80);
@@ -22,8 +22,9 @@
 
 .classroom{
     position: relative;
-    width:100vw;
-    height: 86%
+    min-width:400px;
+    min-height: 500px;
+    display:flex;
 }
 
 .invisible{
@@ -40,8 +41,8 @@
 
 .teacher-head{
     display: inline-block;
-    width: 16vh;
-    height: 16vh;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background-color: var(--skin-color3);
     display: flex;
@@ -153,9 +154,9 @@
 
 /*STUDENT LEFT SIDE*/
 .head-right{
-    width: 30vh;
-    height: 15vh;
-    position: absolute;
+    width: 200px;
+    height: 100px;
+    position: relative;
     left: -51px;
     bottom: 150px;
     border-bottom-left-radius: 510px;
@@ -165,8 +166,8 @@
   }
 
   .hair-right-top{
-    width: 13vh;
-    height: 15vh;
+    width: 90px;
+    height: 100px;
     position: absolute;
     border-bottom-left-radius: 510px;
     border-bottom-right-radius: 510px;
@@ -175,8 +176,8 @@
   }
 
   .hair-right-bottom{
-    width: 15vh;
-    height: 5vh;
+    width: 90px;
+    height: 20px;
     position: absolute;
     border-bottom-left-radius: 510px;
     border-bottom-right-radius: 510px;
@@ -185,8 +186,8 @@
   }
 
 .right-body{
-	width: 30vh;
-    height: 30vh;
+	width: 200px;
+    height: 200px;
     position: absolute;
     bottom: -97px;
     left: 0;
@@ -198,8 +199,8 @@
 }
 
 .right-shoulder{
-    width: 15vh;
-    height:25vh;
+    width: 100px;
+    height:150px;
     position: absolute;
     bottom: -97px;
     left: 90px;
@@ -211,8 +212,8 @@
 }
 /*student rigth side*/
 .head-left{
-    width: 30vh;
-    height: 15vh;
+    width: 200px;
+    height: 100px;;
     position: absolute;
     right: -51px;
     bottom: 150px;
@@ -223,8 +224,8 @@
   }
 
   .hair-left-top{
-    width: 13vh;
-    height: 15vh;
+    width: 90px;
+    height: 100px;
     position: absolute;
     border-top-left-radius: 510px;
     border-top-right-radius: 510px;
@@ -233,8 +234,8 @@
   }
 
   .hair-left-bottom{
-    width: 15vh;
-    height: 5vh;
+    width: 90px;
+    height: 20px;
     position: absolute;
     border-top-left-radius: 510px;
     border-top-right-radius: 510px;
@@ -244,10 +245,10 @@
   }
 
 .left-body{
-	width: 30vh;
-    height: 30vh;
+	width: 200px;
+    height: 200px;
     position: absolute;
-    bottom: -97px;
+    bottom: -90px;
     right: 0;
     border-top-right-radius:0;
     border-top-left-radius:100%;
@@ -257,10 +258,10 @@
 }
 
 .left-shoulder{
-    width: 15vh;
-    height:25vh;
+    width: 100px;
+    height: 150px;
     position: absolute;
-    bottom: -97px;
+    bottom: -90px;
     right: 90px;
     border-top-right-radius:40%;
     border-top-left-radius:100%;
@@ -279,17 +280,16 @@
 .answer-dialog {
 	background: var(--dialog-bg);
 	border-radius: .4em;
-    width: 50vw;
-    height: 16vh;
-    border-radius: .4em;
+    width: 300px;
+    height: 120px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 10px black;
     position: absolute;
-    top: 270px;
-    left:30%
+    top: 260px;
+    left:43%
 }
 
 .answer-dialog:after {
@@ -310,39 +310,38 @@
 .question-dialog {
 	background: var(--dialog-bg);
 	border-radius: .4em;
-    width: 40vw;
-    height: 16vh;
-    border-radius: .4em;
+    width: 300px;
+    height: 120px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     box-shadow: 2px 2px 10px black;
     position: absolute;
-    bottom: 150px;
-    left: 30%;
+    bottom: 5px;
+    left: 5px;
 }
 
 .question-dialog:after {
 	content: '';
 	position: absolute;
-	left: 0;
-	top: 50%;
+	top: 0;
+	left: 50%;
 	width: 0;
 	height: 0;
 	border: 1.75em solid transparent;
-	border-right-color:var(--dialog-bg);
+	border-bottom-color: #02c7d9;
+	border-top: 0;
 	border-left: 0;
-	border-bottom: 0;
-	margin-top: -0.875em;
-	margin-left: -1.75em;
+	margin-left: -0.875em;
+	margin-top: -1.75em;
 }
 
 .input-question{
     /*teaxt-area input*/
    background: #02c7d9;
-   width: 35vw;
-   height: 14vh;
+   width: 230px;
+   height: 110px;
    border: none;
    font-size: 20px;
 }

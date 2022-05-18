@@ -1,22 +1,65 @@
 {% extends 'base.html.twig' %}
 
- {% block body %}
-<div class="classroom">
+{% block body %}
+  <div class="classroom">
+    <!-- teacher -->
+    <div class="teacher">
+      <div class="teacher-head">
+        <div class="hair"></div>
+      </div>
+      <div class="teacher-body"></div>
+      <div class="teacher-right-arm">
+        <div class="shoulder"></div>
+        <div class="arm"></div>
+        <div class="hand"></div>
+        <div class="thumb"></div>
+      </div>
+      <div class="teacher-left-arm">
+        <div class="shoulder"></div>
+        <div class="arm"></div>
+      </div>
 
+      <div class="teacher-legs"></div>
+    </div>
 
-<p>{{answer}}</p>
+    <!-- students -->
+    <div class="student1">
+      <div class="head-right">
+        <div class="hair-right-top"></div>
+        <div class="hair-right-bottom"></div>
+      </div>
 
-<button type="button" class="btn btn-success">{{answer}}</button>
+      <div class="right-body"></div>
+      <div class="right-shoulder"></div>
+    </div>
 
-<a class="btn btn-primary btn-sm" href="{{path('classroom')}}">Rock</a>
+    <div class="student2">
+      <div class="head-left">
+        <div class="hair-left-top"></div>
+        <div class="hair-left-bottom"></div>
+      </div>
+      <div class="left-body"></div>
+      <div class="left-shoulder"></div>
+    </div>
+  </div>
 
+  <!-- dialogs -->
 
+  <div class="question-dialog">
+    <form action="" method="">
+      <p>
+        {{ question }}
+      </p>
+      <a class="ask" href="{{ path('classroom') }}">Ask</a>
+    </form>
+  </div>
 
-
-<p>{{question}}</p>
-
-       
-      
-       
-</div>
- {% endblock %}
+  <div class="answer-dialog">
+    <p class="display-answer">
+      {{ answer }}
+    </p>
+    <p>
+      Any question, doubts...?
+    </p>
+  </div>
+{% endblock %}
